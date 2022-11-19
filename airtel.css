@@ -1,0 +1,119 @@
+*{
+	margin: 0px;
+	padding:0px;
+	
+}
+ul li{
+list-style-type:none;
+}
+
+nav ul{
+	display: flex;
+	list-style-type: none;
+	background-color: white;
+	height: 65px;
+	color: white;
+}
+
+.logout img
+{
+	width: 43px;
+	margin-left:1200px;
+	border-radius:20%;
+	padding:10px;
+}
+
+.brand img{
+	width: 200px;
+	padding: 10px;
+}
+
+.brand{
+	display: flex;
+	align-items: center;
+}
+
+.col-sm-4{
+	background-color:#f1f1f1;
+	justify-content:center;
+	height:500px fixed;
+}
+
+.col-sm-5{
+	background-color:#f1f1f1;
+	justify-content:center;
+	height:auto;
+}
+
+
+.form
+{
+display:flex;
+margin:50px auto;
+padding: 40px auto;
+}
+.form-group{
+	width:50%;
+	align-items:center;
+	display:flex;
+	margin:50px auto;
+	padding: 40px auto;
+}
+
+.form-group img{
+	width: 43px;
+	margin: 0 2px;
+	border-radius:20%;
+	
+}
+
+.ora{
+	margin-top:60px;
+	color:grey;
+}
+
+.choose{
+	background-color:#f1f1f1;
+	justify-content:center;
+	padding: 20px 2px;
+	margin-right:50px;
+}
+.plans{
+
+	width:100%;
+	display:flex;
+	background-color: white;
+	color:black;
+	margin-top: 100px;
+	margin-right:2px;
+	padding:10px;
+	justify-content: space-between;
+	align-items:center;
+}
+
+.col-sm-3{
+	display:block;
+	border-bottom: 1px solid red;
+	text-align:center;
+}
+
+small{
+	color:grey;
+}
+
+button{
+	
+	background-color:red;
+	color:white;
+}
+
+.footer{
+	display: flex;
+	background-color: grey;
+	height: 100px;
+	color: white;
+	padding:20px;
+	justify-content:center;
+
+}
+

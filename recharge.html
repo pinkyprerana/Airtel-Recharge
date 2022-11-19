@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Airtel Recharge</title>
+		<link rel="stylesheet" href="airtel.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://kit.fontawesome.com/ea0da3b216.js" crossorigin="anonymous"></script>
+		<script>
+		$(document).ready(function () {
+          let PrevPagename = localStorage.getItem("AMOUNT");
+			console.warn(PrevPagename)
+			$("#plan").text(PrevPagename)
+        });
+		//document.getElementById("myLink").innerHTML=PrevPagename;
+		</script>
+ </head>
+ <body>
+	<!-----This is a navigation bar with brand logo----->
+	<nav>
+		<ul>
+			<li class="brand"><img src="airtelLogo.jpg"alt="Airtel"></li>
+			<li class="logout "><img src="logout.png" onclick="window.exit()" action="airtelSignUpForm.html" alt="Logout"></li>
+		</ul>
+		<hr></hr>
+	</nav>
+
+
+<div class="row">
+	<div class="col-sm-7">
+		<div class="container text-center">
+			<h2>Payment Options</h2>
+			
+				<div class="form-group">
+					<img src="card.jpg" alt="card">
+					<input type="number" class="form-control" id="card" value="Credit/Debit/ATM card" placeholder="Credit/Debit/ATM card">			
+				</div>
+		
+				<div class="form-group">
+					<img src="net.png" alt="net">
+					<input type="number" class="form-control"  id="net" value="Net banking" placeholder="Net Banking">			
+				</div>
+				
+				<div class="form-group">
+					<img src="upi.png" alt="upi">
+					<input type="number" class="form-control"  id="upi" value="UPI" placeholder="UPI">			
+				</div>
+				
+				<div class="form-group">
+					<img src="wallet.jpg" alt="wallet">
+					<input type="number" class="form-control"  id="wallet" value="Wallet" placeholder="Wallet">			
+				</div>
+				<div class="btn1">
+					<button type="button" onclick={pay()}>Pay Recharge Amount</button>
+				</div>
+			
+		</div>
+	</div>
+
+
+
+	<div class="col-sm-5">
+		<div class="container text-center">
+			<h2>Payment Summery</h2>
+					<div>
+						<span class="form-control" id="plan" name="plan" style="height:40px; border:none; border-bottom: 1px solid red;">Price</span>
+					</div>
+			
+		</div>
+	</div>
+</div>	
+
+
+<!-----------------------------------Pagination bootstrap to jump to other page-------------------------------------------------->
+<div class="pagination d-flex justify-content-end">
+    <li class="page-item"><a class="page-link" href="plan.html" style="background-color:red; color:white">Change Plan</a></li>
+</div>
+			
+<!-----------This ia a script tag to link the webpage with the javascript file---------->
+<script src="airtel.js"></script>
+</body>
+</html>
